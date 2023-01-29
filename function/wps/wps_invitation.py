@@ -25,14 +25,9 @@ from sendNotify import *
 # requests.packages.urllib3.disable_warnings(InsecurePlatformWarning)
 
 # 初始化信息
-Wps_id = ''
+Wps_id = 'V02SecH4GwO7-a9BOK7-INGAA04c1bo00aaefe2000435d4e79'
 sendNotify = sendNotify()
 
-if os.environ['WPS_KEY'] != "":
-    Wps_id = os.environ['WPS_KEY']
-else:
-    print("未填写WPS ID,取消运行")
-    exit(0)
 
 data = {
     "wps_checkin": [
